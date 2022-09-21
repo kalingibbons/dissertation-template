@@ -1,4 +1,4 @@
-% Here is the style file for BSU theses. DO NOT CHANGE. If you 
+% Here is the style file for BSU theses. DO NOT CHANGE. If you
 % think you have found a bug, please email
 % bsulatex@cigss.boisestate.edu
 
@@ -27,11 +27,11 @@
 %\titleformat{\chapter}
 %{\Large\bfseries\MakeUppercase}{\MakeUppercase\chaptertitlename \ \thechapter :}{20pt}{\Large}
 %------------------------------------------------------------------------------
-% package to display (zipped) postscript files, or pdf: 
+% package to display (zipped) postscript files, or pdf:
 \usepackage{graphicx}
 %------------------------------------------------------------------------------
 % this is needed for spacing:
-\usepackage{setspace} 
+\usepackage{setspace}
 \doublespacing
 %------------------------------------------------------------------------------
 % this is needed for the month year format
@@ -123,7 +123,7 @@
       \pagenumbering{roman}
       \begin{center}%
       \vspace*{0.1in}
-        {\large \MakeUppercase{\@title} \par}%   
+        {\large \MakeUppercase{\@title} \par}%
         \vfill                     % Vertical space after title.
         {by\\}              % Set author in \normalsize.
         {\@author}
@@ -133,7 +133,7 @@
         of the requirements for the degree of\\
         \@degree~in~\@discipline\\
         Boise State University
-        
+
         \vspace*{0.5in}
         % \monthname[5] \number\year
         \@date
@@ -146,10 +146,10 @@
   % \let\thanks\relax \gdef\@thanks{}
   \let\maketitle\relax}
 %% end changes to titlepag.sty
-%------------------------------------------------------------------------------ 
+%------------------------------------------------------------------------------
 % submittal sheet (might differ from department to department!)
 \def\submittalsheet{
-\cleardoublepage 
+\cleardoublepage
 % \begin{adjustwidth}{-0.5in}{}%this slides the left margin 0.5in
 \begin{adjustwidth}{0.0in}{}%this slides the left margin 0.5in
 
@@ -167,12 +167,12 @@ of the thesis submitted by\\
 \begin{flushleft}
 
 \begin{singlespace}
-\begin{tabularx}{\textwidth}{@{}lX} 
+\begin{tabularx}{\textwidth}{@{}lX}
 Thesis Title: & {\@title}
 \end{tabularx}
 \end{singlespace}
 
-\begin{tabularx}{\textwidth}{@{}lX} 
+\begin{tabularx}{\textwidth}{@{}lX}
 Date of Final Oral Examination: & {\@oralexamdate}
 \end{tabularx}
 
@@ -183,9 +183,9 @@ Date of Final Oral Examination: & {\@oralexamdate}
 \end{singlespace}
 
 \begin{flushleft}
-\begin{tabular}{@{}ll} 
-{\@advisorname} {\@advisortitle} \hspace{2cm} & {\@advisorfunction} \\ 
-{\@committeeMemberAname} {\@committeeMemberAtitle} \hspace{2cm} & {\@committeeMemberAfunction} \\ 
+\begin{tabular}{@{}ll}
+{\@advisorname} {\@advisortitle} \hspace{2cm} & {\@advisorfunction} \\
+{\@committeeMemberAname} {\@committeeMemberAtitle} \hspace{2cm} & {\@committeeMemberAfunction} \\
 {\@committeeMemberBname} {\@committeeMemberBtitle} \hspace{2cm} & {\@committeeMemberBfunction}
 \end{tabular}
 \end{flushleft}
@@ -250,16 +250,16 @@ Date of Final Oral Examination: & {\@oralexamdate}
   \begingroup
   \parindent \z@ \rightskip \@pnumwidth
   \parfillskip -\@pnumwidth
-  \leavevmode 
+  \leavevmode
   \advance\leftskip\@tempdima
   \hskip -\leftskip
-  \uppercase{#1}\nobreak\ 
+  \uppercase{#1}\nobreak\
   \leaders\hbox{$\m@th
   \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
   mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
   \penalty\@highpenalty
   \endgroup
-  \fi} 
+  \fi}
 %------------------------------------------------------------------------------
 % this is the definition for \chapter{}
 \def\@makechapterhead#1{%
